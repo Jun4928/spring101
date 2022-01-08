@@ -6,8 +6,8 @@ import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository {
 
-    private final Map<Long, Member> store = new HashMap<>();
-    private Long sequence = 0L;
+    private static final Map<Long, Member> store = new HashMap<>();
+    private static Long sequence = 0L;
 
     @Override
     public Member save(Member member) {
