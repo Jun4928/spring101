@@ -14,7 +14,7 @@ public class MemberController {
 
     private final MemberService memberService;
 
-    // Spring Bean 에 등롥되어 있는 객체를 가져다 넣어준다.
+    // Spring Bean 에 등록되어 있는 객체를 가져다 넣어준다.
     // Dependency Injection
     @Autowired
     public MemberController(MemberService memberService) {
